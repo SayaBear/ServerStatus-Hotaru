@@ -717,10 +717,7 @@ Modify_config_client() {
   Modify_config_client_traffic
 }
 Install_jq() {
-  [[ ${mirror_num} == 2 ]] && {
-    github_link="https://hub.fastgit.org"
-    raw_link="https://raw.fastgit.org"
-  } || {
+  {
     github_link="https://github.com"
     raw_link="https://raw.githubusercontent.com"
   }
